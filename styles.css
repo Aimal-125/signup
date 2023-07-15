@@ -1,0 +1,132 @@
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+}
+* {
+	box-sizing: border-box;
+	font-family: monospace, sans-serif;
+}
+.container {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url(images/bg-intro-desktop.png) no-repeat center hsl(0, 100%, 74%);
+	background-size: cover;
+}
+.miniContainer {
+	width: 80%;
+	height: 100%;
+	display: flex;
+}
+.div1, .div2 {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 2rem;
+}
+.hd {
+	color: white;
+	padding-bottom: 1rem;
+	text-shadow: 0px 0px 5px black;
+}
+.txt {
+	color: white;
+	text-shadow: 0px 0px 5px black;
+	font-size: 14px;
+}
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 7px;
+	padding: 2rem;
+	background: white;
+	box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.3);
+}
+.idiv {
+	width: 100%;
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+input {
+	width: 100%;
+	padding: 3%;
+	border: none;
+	border-radius: 4px;
+}
+.idiv span {
+	position: absolute;
+	right: 10px;
+	height: 20px;
+	visibility: hidden;
+}
+.idiv span img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.error {
+	height: 20px;
+	width: 100%;
+	text-align: right;
+	font-family: serif;
+	font-style: italic;
+	font-size: 12px;
+	line-height: 20px;
+	font-weight: bold;
+	color: hsl(0, 100%, 74%);
+	visibility: hidden;
+}
+.try {
+	text-align: center;
+	padding: 3%;
+	justify-self: flex-start;
+	font-size: 14px;
+	margin-bottom: 1.2rem;
+	border-radius: 7px;
+	background: hsl(248, 32%, 49%);
+	color: hsl(246, 25%, 77%);
+	box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.3);
+}
+.try span {
+	font-weight: bold;
+	color: white;
+}
+#btn {
+	width: 100%;
+	padding: 3%;
+	border-bottom: 3px inset green;
+	border-radius: 4px;
+	cursor: pointer;
+	background: hsl(154, 59%, 51%);
+	color: white;
+	font-weight: bold;
+}
+#btn:hover {
+	background: hsl(154, 59%, 58%);
+}
+.smallpara {
+	text-align: center;
+	font-size: 12px;
+	padding: 0.7rem;
+	color: hsl(249, 10%, 26%);
+}
+.terms {
+	color: hsl(0, 100%, 74%);
+}
+
+@media screen and (max-width: 800px) {
+	.miniContainer {
+		flex-direction: column;
+		width: 100%;
+		height: initial;
+	}
+	.div1, .div2 {
+		width: 100%;
+	}
+}
